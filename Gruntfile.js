@@ -434,6 +434,10 @@ module.exports = function (grunt) {
     'htmlmin'
   ]);
 
+  grunt.registerTask('buildcontrol', [
+    'buildcontrol'
+  ]);
+
   grunt.registerTask('default', [
     'newer:jshint',
     'test',
