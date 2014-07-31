@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    angular.module('app').directive('zzTableClient', [
+    angular.module('zachzoellergithubioApp').directive('zzTableClient', [
         '$timeout', function ($timeout) {
             function link(scope, element, attrs) {
                 //console.log(JSON.stringify(scope));
