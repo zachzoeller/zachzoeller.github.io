@@ -77,7 +77,7 @@ module.exports = function (grunt) {
         remote: 'git@github.com:zachzoeller/zachzoeller.github.io.git',
         branch: 'master'
       }
-    },
+    }
     // heroku: {
     //   options: {
     //     remote: 'git@heroku.com:example-heroku-webapp-1988.git',
