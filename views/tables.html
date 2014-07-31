@@ -6,17 +6,18 @@
             <table class="table table-striped table-hover" style="margin-top: 20px;">
                 <thead>
                     <tr>
-                        <th>                        
-                        </th>
-                        <!-- <th>
-                            <sort-column-header data-column-desc="Year" data-column-name="Year" data-current-sort="{{tableModel.searchCriteria.Sort}}" data-on-sort="tableModel.changeSort(sort)" />
-                        </th>
-                         -->
+                        <th>
+                            <sort-column-header data-column-desc="Name" data-column-name="name" data-current-sort="{{tableModel.searchCriteria.Sort}}" data-on-sort="tableModel.changeSort(sort)" />
+                        </th>                        
+                        <th>
+                            <sort-column-header data-column-desc="Name" data-column-name="name" data-current-sort="{{tableModel.searchCriteria.Sort}}" data-on-sort="tableModel.changeSort(sort)" />
+                        </th>                        
                     </tr>
                 </thead>
                 <tbody>
-                    <tr data-ng-repeat="budget in tableModel.list">
-                        <td> stuff</td>
+                    <tr data-ng-repeat="person in tableModel.list">
+                        <td>{{person.name}}</td>
+                        <td>{{person.age}}</td>
                     </tr>
 
                 </tbody>
