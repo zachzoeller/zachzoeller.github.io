@@ -1,1 +1,37 @@
 <p>{{title}}</p>
+
+<div class="panel panel-default" omni-table-server table-model="tableModel">
+        <div class="panel-body table-panel-body">
+
+            <table class="table table-striped table-hover" style="margin-top: 20px;">
+                <thead>
+                    <tr>
+                        <th>                        
+                        </th>
+                        <!-- <th>
+                            <sort-column-header data-column-desc="Year" data-column-name="Year" data-current-sort="{{tableModel.searchCriteria.Sort}}" data-on-sort="tableModel.changeSort(sort)" />
+                        </th>
+                         -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-ng-repeat="budget in tableModel.list">
+                        <td> stuff</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="panel-footer">
+            <div class="clearfix">
+                <div class="pull-left">
+                    <pagination class="pagination-sm" data-page="tableModel.searchCriteria.Page" data-items-per-page="tableModel.searchCriteria.NumberPerPage" data-total-items="tableModel.totalItems" data-max-size="5" data-boundary-links="true" data-rotate="false" data-on-select-page="tableModel.changePage(page)"></pagination>
+                </div>
+                <div class="pull-right">
+                    <select class="form-control" data-ng-model="tableModel.searchCriteria.NumberPerPage" data-ng-change="tableModel.refresh()">
+                        <option data-ng-repeat="pageSize in tableModel.pageSizes">{{pageSize}}</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
