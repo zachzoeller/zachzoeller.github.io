@@ -14,6 +14,4 @@ angular.module('zachzoellergithubioApp')
       'AngularJS',
       'Karma'
     ];
-
-    $scope.dt = {};
   });
