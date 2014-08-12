@@ -33,9 +33,9 @@
                 <!-- <div class="pull-left">
                     <pagination class="pagination-sm" data-page="tableModel.searchCriteria.Page" data-items-per-page="tableModel.searchCriteria.NumberPerPage" data-total-items="tableModel.totalItems" data-max-size="5" data-boundary-links="true" data-rotate="false" data-on-select-page="tableModel.changePage(page)"></pagination>
                 </div> -->
-                <!-- <div class="pull-left">
-                    <pagination class="pagination-sm" ng-model="tableModel.searchCriteria.Page" items-per-page="tableModel.searchCriteria.NumberPerPage" total-items="tableModel.totalItems" max-size="5" data-boundary-links="true" data-rotate="false" data-on-select-page="tableModel.changePage(page)"></pagination>
-                </div> -->
+                <div class="pull-left">
+                    <pagination class="pagination-sm" ng-model="tableModel.searchCriteria.Page" items-per-page="tableModel.searchCriteria.NumberPerPage" total-items="tableModel.totalItems" max-size="5" data-boundary-links="true" data-rotate="false" ng-change="tableModel.changePage(page)"></pagination>
+                </div>
                 <div class="pull-right">
                     <select class="form-control" data-ng-model="tableModel.searchCriteria.NumberPerPage" data-ng-change="tableModel.refresh()">
                         <option data-ng-repeat="pageSize in tableModel.pageSizes">{{pageSize}}</option>
