@@ -87,11 +87,11 @@
                         $scope.tableModel.filteredList = tempList.slice(begin, end);                                                
                     }
 
-                    function changePage(page) {
+                    function changePage() {                    
                         if ($scope.tableModel.isUsingSearch) {
-                            $scope.tableModel.searchPage = page;
+                            $scope.tableModel.searchPage = $scope.tableModel.searchCriteria.Page;
                         } else {
-                            $scope.tableModel.searchCriteria.Page = page;
+                            $scope.tableModel.searchCriteria.Page = $scope.tableModel.searchCriteria.Page;
                         }
 
                         updateSlice();                        
